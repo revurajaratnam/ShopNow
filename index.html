@@ -27,22 +27,65 @@
             padding: 15px 100px;
             gap: 100px;
         }
-        .background-img img{
-            position: relative;
-            width: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .background-img .login-page{
-            width: 400px;
-            height: 500px;
-            background: #ccc;
-        }
         .container-1{
             position: relative;
-            height: 1200px;
+            width: 100%;
+            min-height: 600px;
+            background-image: url(./images/bg-image.jpg);
+            background-position: center;
+            background-size: cover;
         }
+        .container-1 .login-page-in{
+            position:absolute;
+            width: 400px;
+            height: 400px;
+            margin: 150px;
+            border-radius: 20px;
+            background:rgba(255, 255, 255,0.10);
+        }
+        .container-1 .login{
+            padding: 70px;
+        }
+        .container-1 .login tr{
+            text-align: center;
+        }
+        input[type="text"]{
+            display: block;
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            border: none;
+            background: rgba(0, 0, 0, 0.25);
+        }
+        input[type="password"]{
+            display: block;
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            border: none;
+            background: rgba(0, 0, 0, 0.25);
+        }
+        .login label{
+            color:white;
+            margin-bottom: 10px;
+        }
+        .login .btn{
+            margin: 30px;
+            margin-left: 80px;
+            padding: 10px;
+            width: 100px;
+            border-radius: 10px;
+            border: none;
+        }
+        .btn:hover{
+            color: white;
+            background-color: #002758;
+        }
+        
     </style>
 </head>
 <body>
@@ -60,16 +103,27 @@
         </div>
     </header>
     <section class="container-1">
-        <div class="background-img">
-            <div class="login-page">
-                
-                <div class="login-page">
-                
+            <div class="login-page-in">
+                <div class="login">
+                    <form action="submit">
+                       <table>
+                        <tr>
+                            <td><label for="">Customer Name:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="cname"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Customer Password:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" name="cname"></td>
+                        </tr>
+                       </table>
+                       <button class="btn">Login</button>
+                    </form>
                 </div>
-            <img src="./images/bg-image.jpg" alt="">
-            
-
-        </div>
+                </div>
     </section>
     
 </body>
