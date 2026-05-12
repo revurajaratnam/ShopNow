@@ -272,22 +272,22 @@
     <section class="container-1">
             <div class="login-page-in">
                 <div class="login">
-                    <form action="submit">
+                    <form action="">
                        <table>
                         <tr>
                             <td><label for="">Customer Name:</label></td>
                         </tr>
                         <tr>
-                            <td><input type="text" name="cname"></td>
+                            <td><input type="text" name="cname" id="cname"></td>
                         </tr>
                         <tr>
                             <td><label for="">Customer Password:</label></td>
                         </tr>
                         <tr>
-                            <td><input type="password" name="cname"></td>
+                            <td><input type="password" name="cname" id="cpass"></td>
                         </tr>
                        </table>
-                       <button class="btn">Login</button>
+                       <button class="btn" id="btn1">Login</button>
                     </form>
                 </div>
                 </div>
@@ -384,4 +384,9 @@
         </div>
     </div>
 </body>
+<script>
+    document.getElementById("btn1").addEventListener("click",()=>{
+        alert("Login successful")
+    })
+</script>
 </html>
