@@ -388,5 +388,12 @@
     document.getElementById("btn1").addEventListener("click",()=>{
         alert("Login successful")
     })
+    document.getElementById("cname").addEventListener("blur", (e) => {
+        let value = e.target.value;
+    
+        if (!/^[a-zA-Z]+$/.test(value)) {
+            alert("Only alphabets allowed!");
+        }
+    });
 </script>
 </html>
