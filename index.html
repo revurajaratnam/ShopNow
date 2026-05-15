@@ -211,10 +211,10 @@
             overflow: hidden;
         }
         .container-7{
+            position: relative;
             display: flex;
             width: 100%;
             height: 1500px;
-           
             gap: 10px;
             overflow: hidden;
         }
@@ -261,9 +261,10 @@
             border-radius: 10px;
             box-shadow:3px 3px 20px 5px  rgba(0, 0, 0, 0.25);
         }
-        .container-7 .bigcard-5{
-            display: flex;;
-            flex-direction: column;
+        .container-7 .bigcard-5child-11{
+            display: flex;
+            position: absolute;
+            flex-direction:column;
             width: 700px;
             height: 600px;
             margin-left: 3em;
@@ -272,11 +273,32 @@
             border-radius: 10px;
             box-shadow:3px 3px 20px 5px  rgba(0, 0, 0, 0.25);
         }
-        .container-6 .big5{
+        .container-7 .bigcard-5child-22{
+            display: flex;
+            position: absolute;
+            flex-direction:column;
+            width: 700px;
+            height: 600px;
+            margin-top: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-left: 800px;
+            box-shadow:3px 3px 20px 5px  rgba(0, 0, 0, 0.25);
+        }
+        .container-7 .big5child-1{
             width: 750px;
             height: 500px;
             margin-top: 50px;
-            margin-top: 10px;
+            margin-left: -50px;
+
+        }
+        .container-7 .big5child-2{
+            width: 750px;
+            height: 500px;
+            margin-top:50px;
+            margin-left: -50px;
+
+          
         }
     </style>
 </head>
@@ -409,12 +431,12 @@
         </div>
        </div>
        <div class="container-7">
-        <div class="bigcard-5">
-            <img src="./images/tv5.png" alt="" class="big5">
+        <div class="bigcard-5child-11">
+            <img src="./images/tv5.png" alt="" class="big5child-1">
             <h1>Bezel less smart tv</h1>
         </div>
-        <div class="bigcard-5">
-            <img src="./images/tv5.png" alt="" class="big5">
+        <div class="bigcard-5child-22">
+            <img src="./images/tv5.png" alt="" class="big5child-2">
             <h1>Bezel less smart tv</h1>
         </div>
        
